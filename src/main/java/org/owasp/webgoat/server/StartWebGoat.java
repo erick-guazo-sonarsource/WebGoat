@@ -38,6 +38,7 @@ import org.springframework.core.io.ClassPathResource;
 public class StartWebGoat {
 
   public static void main(String[] args) {
+    String password = "password";
     var parentBuilder =
         new SpringApplicationBuilder().parent(ParentConfig.class).web(WebApplicationType.NONE);
     parentBuilder
